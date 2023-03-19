@@ -45,3 +45,226 @@ img{
   padding: 0 15px;
 }
 /* Header */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo a {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 26px;
+  color: #41B883;
+}
+
+.menu ul {
+  display: grid;
+  justify-content: end;
+  grid-template-columns: repeat(5, auto);
+}
+
+.menu ul li a {
+  display: block;
+  margin-left: 20px;
+}
+.menu ul li a:hover {
+  color: #41B883;
+}
+
+/* Banner */
+.banner-area img {
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* About */
+.about-area {
+  padding: 40px 0 80px;
+}
+.about-top {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.about-top h4 {
+  font-size: 26px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.about-box {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 20px;
+}
+
+.single-about {
+  text-align: center;
+  border: 1px solid #f2f2f2;
+  padding: 40px 20px;
+  transition: .3s;
+}
+
+.single-about i {
+  font-size: 26px;
+  border: 1px solid #ddd;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+}
+
+.single-about h4 {
+  text-transform: capitalize;
+  font-size: 26px;
+  margin: 20px 0;
+}
+.single-about p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.single-about:hover {
+  border: 1px solid #41B883;
+  border-radius: 7px;
+}
+/* Service */
+.services-area {
+  background-color: #f2f2f2;
+  padding: 100px 0;
+}
+
+.title h4 {
+  text-transform: capitalize;
+  font-size: 40px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 30px;
+}
+
+.single-service {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.single-service h4 {
+  text-align: center;
+  font-size: 22px;
+  text-transform: capitalize;
+  background-color: teal;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.single-service p {
+  margin: 10px 0;
+}
+.single-service a:hover{
+  background-color: teal;
+}
+/* Gallery */
+.gallery-area {
+  padding: 100px 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 30px;
+}
+
+.single-gallery img{
+  border: 1px solid #ddd;
+  padding: 3px;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.single-gallery img:hover{
+  transform: scale(1.1);
+}
+.contact-area {
+  padding: 100px 0;
+  background-color: #f2f2f2;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  column-gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #41B883;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 10px 30px;
+  display: inline-block;
+  transition: .3s;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: teal;
+}
+
+.single-contact {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 9fr;
+  margin-bottom: 20px;
+}
+
+.single-contact i {
+  background-color: #41B883;
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #ddd;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.single-contact h4 {
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.single-contact h4 span {
+  font-size: 16px;
+  display: block;
+  color: #777;
+  text-transform: lowercase;
+  font-weight: 400;
+}
+
+/* Footer */
+.footer-area {
+  padding: 25px 0;
+  background-color: #41B883;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+}

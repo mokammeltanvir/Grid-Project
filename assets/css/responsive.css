@@ -9,12 +9,35 @@
     .container {
         width: 750px;
     }
+    .header{
+        grid-template-columns: 30% auto;
+    }
 }
 
 /* Mobile Layout: 320px */
 @media only screen and (max-width: 767px) {
   .container{
         width: 300px;
+    }
+    .header{
+        grid-template-columns: auto;
+        text-align: center;
+    }
+    .menu ul{
+        margin-top: 20px;
+        justify-content: center;
+        grid-template-columns: auto;
+    }
+    .about-box, .services {
+        grid-template-columns: auto;
+        row-gap: 20px;
+    }
+    .gallery{
+        grid-template-columns: repeat(2, auto);
+    }
+    .contact{
+        grid-template-columns: auto;
+        row-gap: 20px;
     }
 
 }
